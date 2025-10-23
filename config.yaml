@@ -1,0 +1,9 @@
+artifacts_root: artifacts
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  train_ds: xwjzds/hr_multiwoz_tod_sgd
+  test_ds: lipinp/hrevaldataset
+  train_root_dir: artifacts/data_ingestion/train
+  test_root_dir: artifacts/data_ingestion/test
+logging:
+  root_dir: logging

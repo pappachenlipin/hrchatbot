@@ -1,0 +1,5 @@
+setup.py
+src/hrchatbot.egg-info/PKG-INFO
+src/hrchatbot.egg-info/SOURCES.txt
+src/hrchatbot.egg-info/dependency_links.txt
+src/hrchatbot.egg-info/top_level.txt
