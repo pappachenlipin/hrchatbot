@@ -2,7 +2,7 @@ from ..logging import logging
 from datasets import load_dataset
 import pickle,os
 
-class Data_IngestionProcess:
+class DataIngestionProcess:
     def __init__(self, config):
         self.config = config
     def ingest_data(self):

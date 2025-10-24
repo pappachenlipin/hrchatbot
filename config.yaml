@@ -5,5 +5,31 @@ data_ingestion:
   test_ds: lipinp/hrevaldataset
   train_root_dir: artifacts/data_ingestion/train
   test_root_dir: artifacts/data_ingestion/test
-logging:
-  root_dir: logging
+data_enrichment:
+  root_dir: artifacts/data_enrichment
+  train_root_dir: artifacts/data_enrichment/train
+  test_root_dir: artifacts/data_enrichment/test
+data_preprocess:
+  root_dir: artifacts/data_preprocess
+  tokenizer: bert-base-cased
+  labels2id: artifacts/data_preprocess
+model:
+  basemodel: bert-base-cased
+  freezeto: 8
+training:
+  output_dir: artifacts/best_model
+  checkpoints_dir: artifacts/checkpoints_dir
+  per_device_train_batch_size: 16
+  learning_rate: 2e-5
+  num_train_epochs: 10
+  save_strategy: epoch
+  logging_strategy: epoch
+  evaluation_strategy: epoch
+  load_best_model_at_end: True
+  report_to: []
+  early_stopping_patience: 2
+  
+
+
+  
+
